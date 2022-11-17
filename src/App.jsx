@@ -46,7 +46,7 @@ function App() {
 
   const deleteById = (id) => {
     personsService.deleteById(id).then(() => {
-      setPersons(persons.filter((person) => person.id !== Number(id)));
+      setPersons(persons.filter((person) => person.id !== id));
     });
   };
 
